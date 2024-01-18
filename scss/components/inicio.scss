@@ -1,0 +1,18 @@
+.videoinicio {
+    display: flex;
+    justify-content: center;
+    video {
+    width: 100%;
+    pointer-events: none;
+    }
+}
+.tituloinicio {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+h1 {
+color: rgb(253, 211, 1);
+font-weight: bold;
+}
+
+}

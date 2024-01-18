@@ -1,0 +1,25 @@
+@import "./components/header";
+@import "./components/inicio.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Formula1-Regular;
+    src: url(../fuentes/Formula1-Regular.ttf);
+}
+
+@font-face {
+    font-family: Formula1-Bold;
+    src: url(../fuentes/Formula1-Bold.ttf);
+}
+
+
+
+body {
+    font-family: Formula1-Regular;
+    background-color: rgb(39, 38, 38);
+}

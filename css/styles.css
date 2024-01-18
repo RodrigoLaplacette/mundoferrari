@@ -1,0 +1,134 @@
+@charset "UTF-8";
+header {
+  background-color: rgb(146, 17, 17);
+  position: fixed;
+  height: 120px;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.menucontainer {
+  height: 200px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.racing-logo {
+  display: flex;
+  width: 6rem;
+}
+.racing-logo img {
+  width: 6rem;
+}
+
+.menu {
+  margin-left: 25%;
+  padding: 3rem;
+}
+.menu li:hover > ul {
+  display: block;
+}
+.menu li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+  text-align: start;
+  padding: 0;
+}
+.menu li ul li a {
+  color: rgba(255, 166, 0, 0.922);
+}
+.menu ul {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+}
+.menu a {
+  font-family: Formula1-Bold;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2%;
+}
+.menu a:hover {
+  color: rgba(226, 234, 9, 0.912);
+}
+
+/**propiedad para cambiar de color el texto a la hora de pasar el cursos**/
+.abrir-menu {
+  display: none;
+}
+
+.cerrar-menu {
+  display: none;
+}
+
+.f1animado {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: auto;
+}
+.f1animado img {
+  width: 10%;
+  position: relative;
+  opacity: 0;
+  animation: desplazamiento 10s linear infinite; /* Ajusta la duración según tu preferencia */
+}
+@keyframes desplazamiento {
+  0% {
+    left: -80%;
+    opacity: 0;
+  }
+  1% {
+    opacity: 10;
+  }
+  100% {
+    left: calc(140% - 100px); /* Ajusta la posición final según el tamaño de tu imagen */
+  }
+}
+
+.videoinicio {
+  display: flex;
+  justify-content: center;
+}
+.videoinicio video {
+  width: 100%;
+  pointer-events: none;
+}
+
+.tituloinicio {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.tituloinicio h1 {
+  color: rgb(253, 211, 1);
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Formula1-Regular;
+  src: url(../fuentes/Formula1-Regular.ttf);
+}
+@font-face {
+  font-family: Formula1-Bold;
+  src: url(../fuentes/Formula1-Bold.ttf);
+}
+body {
+  font-family: Formula1-Regular;
+  background-color: rgb(39, 38, 38);
+}
+
+/*# sourceMappingURL=styles.css.map */
